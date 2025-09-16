@@ -5,16 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emergency-Hotline</title>
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="assets/emergency.png" type="image/x-icon">
+  <!-- Emergency Favicon -->
+ <link rel="shortcut icon" href="./assets/emergency.png" type="image/x-icon">
   <!-- TAILWIND CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   <!-- FONT AWESOME CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
 
+</head>
 <body class="bg-[#F5FFF6] font-sans">
   <!-- navbar -->
   <nav class="max-w-[100vw] flex flex-col sm:flex-row sm:justify-between gap-3 sm:gap-0  py-3 px-2 items-center bg-white lg:px-10">
@@ -24,5 +25,20 @@
         Emergency <br class="hidden sm:block"/>Service
       </h2>
     </div>
+
+     <div class="flex">
+      <div class="flex items-center bg-[#ECFFF0] py-1 px-3 rounded-full">
+        <h2 id="heart-count" class="font-bold text-[14px]">0</h2>
+        <img src="assets/heart.png" alt="" class="h-7 ml-[7px]"/>
+      </div>
+      <div class="flex items-center bg-[#ECFFF0] mx-3 py-1 px-3 rounded-full">
+        <h2 id="coin-count" class="font-bold text-[14px]">100</h2>
+        <img src="assets/coin.png" alt="" class="h-7 ml-[7px]"/>
+      </div>
+      <div class="py-1 px-3 rounded-full bg-[#00A63E] text-white">
+        <p><span id="copy-count" class="font-bold text-[14px]">0</span> Copy</p>
+      </div>
+    </div>
+
     </nav>
     </body>
